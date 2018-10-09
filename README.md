@@ -44,6 +44,21 @@
 
 ## Inner and Outer Joins
 * Inner Join
-* Outer Join
+  - combine result on given predicate
+```sql
+  /*Explicit Join Notation*/
+  SELECT *
+  FROM employee INNER JOIN department
+  ON employee.DepartmentID = department.DepartmentID;
+  
+  /*Implicit Join Notation*/
+  SELECT *
+  FROM employee, department
+  WHERE employee.DepartmentID = department.DepartmentID;
+```
+* Outer Join (even if no record but still return the row with empty valuse)
   - Left Outer Join
+    - left all + if right not present[against predicate] still return empty row
   - RIght Outer Join
+    - right all + if left not present[against predicate] still return empty row
+
