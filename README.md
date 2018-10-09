@@ -74,6 +74,7 @@
   - Full Outer Join
     - contains all records of both the left and right tables
 
-## Drop, Truncate and Delete
+## Drop, Truncate and Delete commands in SQL
+* 
 
 
