@@ -13,7 +13,7 @@
    /*-----------------------------------------------------*/
    /*At another column*/
    @OneToOne(fetch = FetchType.LAZY)
-	@PrimaryKeyJoinColumn
+   @PrimaryKeyJoinColumn
    
    /*Or*/
    @OneToOne()
@@ -28,9 +28,6 @@
 
 ## Inner and Outer Joins
 * Inner Join
-  - 
 * Outer Join
   - Left Outer Join
-    - 
   - RIght Outer Join
-    - 
