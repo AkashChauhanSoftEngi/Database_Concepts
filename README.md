@@ -22,8 +22,10 @@
 ```
 * OneToMany
   - Department & Employee mapping
+  - @OneToMany annotation
 * ManyToMany
   - Books & Authers
+  - @ManyToMany annotation
 * Reference: https://www.mkyong.com/hibernate/hibernate-one-to-one-relationship-example-annotation/
 
 ## Inner and Outer Joins
