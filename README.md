@@ -6,19 +6,33 @@
   - Unidirectional : Person can refer to PAN entity
   - Bidirectional : PAN entity can refer back to Person
 ```java
-   /*-----------------------------------------------------*/
-   /*At one column*/
-   @OneToOne(fetch = FetchType.LAZY, mappedBy = "stock")
+    /*-----------------------------------------------------*/
+    @Entity
+    public class Person {
+    @Id private int id;
+    @OneToOne
+    @JoinColumn(name="PAN_ID")
+    private PAN pan;
+    }
+
+    @Entity
+    public class PAN {
+    @Id private int id;
+    @OneToOne(mappedBy="pan")
+    private Person person;
+    }
+    /*-----------------------------------------------------*/
+    /*At one column*/
+    @OneToOne(mappedBy = "pen")
    
-   /*-----------------------------------------------------*/
-   /*At another column*/
-   @OneToOne(fetch = FetchType.LAZY)
-   @PrimaryKeyJoinColumn
+    /*At another column*/
+    @OneToOne()
+    @PrimaryKeyJoinColumn
    
-   /*Or*/
-   @OneToOne()
-   @JoinColumn(name = "person_id", nullable = false)
-   /*-----------------------------------------------------*/   
+    /*Or*/
+    @OneToOne()
+    @JoinColumn(name = "person_id", nullable = false)
+    /*-----------------------------------------------------*/   
 ```
 * OneToMany
   - Department & Employee mapping
