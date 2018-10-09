@@ -71,4 +71,9 @@
     FROM employee RIGHT OUTER JOIN department
     ON employee.DepartmentID = department.DepartmentID;
     ```
+  - Full Outer Join
+    - contains all records of both the left and right tables
+
+## Drop, Truncate and Delete
+
 
