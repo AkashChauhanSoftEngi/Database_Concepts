@@ -75,6 +75,19 @@
     - contains all records of both the left and right tables
 
 ## Drop, Truncate and Delete commands in SQL
-* 
-
+* Delete is used to delete rows from a table with optional where clause, we need to commit or rollback after
+calling this operation. This operation will cause all DELETE triggers to be fired on the table.
+```sql
+  DELETE FROM Employee WHERE age < 14;
+```
+* Truncate removes all rows from table, this operation can not be rolled back and no triggers are fired, thus it is
+faster in performance as well.
+```sql
+  Truncate Table Employee;
+```
+* Drop command will remove a table from the schema, all data rows, indexes, privileges will be removed, no
+triggers will be fired and no rollback.
+```sql
+  Drop Table Employee;
+```
 
