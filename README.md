@@ -91,3 +91,7 @@ triggers will be fired and no rollback.
   Drop Table Employee;
 ```
 
+## Use of @Transectional in Spring
+```text
+  Reference: https://stackoverflow.com/questions/1099025/spring-transactional-what-happens-in-background
+```
