@@ -95,3 +95,6 @@ triggers will be fired and no rollback.
 ```text
   Reference: https://stackoverflow.com/questions/1099025/spring-transactional-what-happens-in-background
 ```
+
+## Oracle Vs Mysql
+* https://www.youtube.com/watch?v=fSPBmXKGCJ8&t=60s
