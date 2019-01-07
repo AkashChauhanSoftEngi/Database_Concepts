@@ -32,7 +32,18 @@
     /*Or*/
     @OneToOne()
     @JoinColumn(name = "person_id", nullable = false)
-    /*-----------------------------------------------------*/   
+    /*-----------------------------------------------------*/
+    public class Employee {
+    @OneToOne(mappedBy = "emp")
+    private Phone phone;
+    }
+
+    public class Phone {
+    @OneToOne
+    @JoinColumn(name = "EMP_ID")
+    private Employee emp;
+    }
+    https://www.devglan.com/hibernate/hibernate-one-to-one-mapping-example
 ```
 * OneToMany
   - Department & Employee mapping
