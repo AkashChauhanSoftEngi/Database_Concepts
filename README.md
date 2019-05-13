@@ -109,3 +109,12 @@ triggers will be fired and no rollback.
 
 ## Oracle Vs Mysql
 * https://www.youtube.com/watch?v=fSPBmXKGCJ8&t=60s
+
+## Functions in SQL
+* AVG([ALL | DISTINCT] expression)
+  - ALL instructs the AVG() function to take all values for calculation. ALL is used by default.
+  DISTINCT instructs the AVG() function to operate only on unique values.
+  expression is a valid expression that returns a numeric value.
+  - The AVG() function ignoresNULL values.
+  
+## 
